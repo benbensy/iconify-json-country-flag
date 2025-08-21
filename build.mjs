@@ -61,7 +61,9 @@ async function buildMap() {
         }
       });
 
-      iconContentMap[name] = result;
+      iconContentMap[name] = {
+        body: result
+      };
     } catch (error) {
       throw new Error("解析 SVG 失败");
     }

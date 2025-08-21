@@ -1,7 +1,7 @@
 const icons = require('./icons.json');
-const info = require('./info.json');
 const metadata = {};
 const chars = {};
+const info = {};
 
 exports.icons = icons;
 exports.info = info;

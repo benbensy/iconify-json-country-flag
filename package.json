@@ -1,0 +1,39 @@
+{
+  "name": "iconify-json-country-flag",
+  "version": "1.5.0",
+  "description": "",
+  "main": "index.js",
+  "iconSetVersion": "1.5.0",
+  "module": "index.mjs",
+  "exports": {
+    "./*": "./*",
+    ".": {
+      "types": "./index.d.ts",
+      "require": "./index.js",
+      "import": "./index.mjs"
+    },
+    "./icons.json": "./icons.json"
+  },
+  "iconSet": {
+    "icons": "icons.json"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "postinstall": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "packageManager": "pnpm@10.13.1",
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "country-flag-icons": "^1.5.19",
+    "rolldown": "1.0.0-beta.33"
+  },
+  "devDependencies": {
+    "fast-xml-parser": "^5.2.5",
+    "tsx": "^4.20.4"
+  }
+}
